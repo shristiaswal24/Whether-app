@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>🌤 Weather App</h1>
+
+    <div class="search-box">
+        <input type="text" id="locationInput" placeholder="Enter location (e.g. Delhi)">
+        <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div class="weather-card" id="weatherCard">
+        <h2 id="city">City</h2>
+        <img id="icon" src="" alt="">
+        <h1 id="temp">--°C</h1>
+        <p id="condition">Condition</p>
+
+        <div class="extra">
+            <p>💧 Humidity: <span id="humidity">--</span>%</p>
+            <p>🌬 Wind: <span id="wind">--</span> km/h</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
